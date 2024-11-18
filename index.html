@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anteckningsapp</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Note-app</h1>
+
+    <!-- Formulär för att lägga till en ny anteckning -->
+    <form id="note-form">
+        <div class="form-group">
+            <input type="text" id="note-title" placeholder="Titel" required />
+        </div>
+        <div class="form-group">
+            <textarea id="note-content" placeholder="Innehåll" required></textarea>
+        </div>
+        <button type="submit">Spara Anteckning</button>
+    </form>
+
+    <!-- Sektion för att visa sparade anteckningar -->
+    <div id="notes-list"></div>
+
+    <button id="clear-all">Ta bort alla anteckningar</button>
+
+    <script src="/index.js"></script>
+</body>
+</html>
